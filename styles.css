@@ -4,30 +4,40 @@
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #FFF2CC;
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
 
-.sub-header h3{
-    color: #fff;
-    font-family: "Montserrat";
+body{
+    background-color: #400d72;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("/Lyrix.gif"), linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 nav{
     display: flex;
     padding: 2%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: #CAF4F4;
-}
-
-nav img{
-    width: 50px;
+    background: #400d72;
 }
 
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 .nav-links ul li{
@@ -40,8 +50,9 @@ nav img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 20px;
     font-family: "Montserrat";
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .nav-links ul li::after{
@@ -49,20 +60,13 @@ nav img{
     width: 0%;
     height: 2px;
     background: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
     display: block;
     margin: auto;
 }
 
 .nav-links ul li:hover::after{
     width: 100%;
-}
-
-nav .fa-times-circle{
-    display: none;
-}
-
-nav .fa-chevron-circle-down{
-    display: none;
 }
 
 nav .fa-home{
