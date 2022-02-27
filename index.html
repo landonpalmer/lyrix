@@ -8,7 +8,6 @@
     </head>
     <body>
         <section class="header">
-            <div class="navigation">
                 <nav>
                     <div class="nav-links" id="navLinks">
                         <ul>
@@ -16,15 +15,44 @@
                         </ul>
                     </div>
                 </nav>  
-            </div>
-            <div class="search">
-                <div class="search-bar">
-
-                </div>
-                <div class="search-lan">
-                    
-                </div>
-            </div>
         </section>
+        <section class="picture"></section>
+        <section class="search">
+            <form id="form" role="search">
+                <input type="search" id="query" name="q"
+                placeholder="Search..."
+                aria-label="Search through site content">
+            </form>
+            <div class="dropdown">
+                <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
+                <div id="dropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="dropSearch" onkeyup="filterFunction()">
+                  <a href="#">English</a>
+                  <a href="#">Spanish</a>
+                  <a href="#">Korean</a>
+                </div>
+              </div>
+        </section>
+
+        <script>
+            function dropFunction(){
+                document.getElementById("dropdown").classList.toggle("show")
+            }
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("dropSearch");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("dropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                    } else {
+                    a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
