@@ -3,10 +3,10 @@ bridging the language barrier across music
 
 
 # Team Members
-Khoi Dao__
-Kevin Santos__
-Landom Palmer__
-Vinay Adabala__
+Khoi Dao\
+Kevin Santos\
+Landom Palmer\
+Vinay Adabala\
 Mario Sandoval (github: mcsandovall)
 
 #About Us
