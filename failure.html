@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404 Error</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+        <script type="text/javascript" src="/frontScript.js"></script>
+    </header>
+    <body>
+        <section class="fail-mssg">
+            <span>
+                <h1>Ooops...</h1>  
+            </span>
+            <span>
+              <h2>The song you searched is not available</h2>  
+            </span>
+        </section>
+
+        <section class="pic">
+            <div class="logo"></div>
+        </section>
+
+        <section class="search">
+            <form id="form" role="search">
+                <input type="search" id="query" name="q"
+                placeholder="What other song is on your mind..."
+                aria-label="Search through site content">
+                <button>Search</button>
+            </form>
+            <div class="dropdown">
+                <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
+                <div id="dropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="dropSearch" onkeyup="filterFunction()">
+                  <a href="#">English</a>
+                  <a href="#">Spanish</a>
+                  <a href="#">Korean</a>
+                </div>
+              </div>
+        </section>
+    </body>
+    
+</html>

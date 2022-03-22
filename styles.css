@@ -171,3 +171,37 @@ nav .fa-home{
     width: 44px;
     height: 44px;
 }
+
+/* Failure Page*/
+
+.fail-mssg{
+    margin: auto;
+    width: 30%;
+    padding-bottom: 5%;
+}
+
+.fail-mssg h1{
+    display: block;
+    color: #fff;
+    font-size: 10rem;
+}
+
+.fail-mssg h2{
+    display: block;
+    color: #fff;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic .logo{
+    min-height: 15vh;
+    width: 10%;
+    background-image: url("/Lyrix.gif"), linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
