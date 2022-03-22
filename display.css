@@ -140,16 +140,24 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-left: 10%;
+    padding-bottom: 2%;
 }
 
 .text-display label{
     display: block;
     color: #ddd;
+    padding-left: 25%;
 }
 
-.text-display input{
-    display: block;
+.text-display .text-box{
+    background-color: #fff;
+    border-radius: 10px;
     min-height: 60vh;
-    min-width: 50vh;
+    width: 70%;
+}
+
+.text-display .text-box p{
+    padding: 5px;
 }
 
