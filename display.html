@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lyrix</title>
+        <link rel="stylesheet" href="display.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+        <script type="text/javascript" src="/frontScript.js"></script>
+    </head>
+    <body>
+        <section class="picture">
+            <div class="logo"></div>
+        </section>
+        <section class="search-bar">
+            <div class="search">
+                <form id="form" role="search">
+                    <input type="search" id="query" name="q" placeholder="Ready for the next song?">
+                    <button>Search</button>
+                </form>
+                <div class="drop-down">
+                    <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
+                    <div id="dropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="dropSearch" onkeyup="filterFunction()">
+                    <a href="#">English</a>
+                    <a href="#">Spanish</a>
+                    <a href="#">Korean</a>
+                </div>
+            </div>
+        </section>
+        <section class="text-display">
+            <!-- Text boxes are non editable and used for display of lyrics-->
+            <span style="display:inline-block;">
+                <label for="original">Original Lanague</label>
+                <input class="original-lan" id="o-lan" type="text" id="original" name="original" value="버터처럼 부드럽게"
+                readonly> 
+            </span>
+            <span style="display: inline-block;">
+                <label for="translated">Translated Lanague</label>
+                <input class="translated-lan" id="t-lan" type="text" id="translated" name="translated" value="These are the translated lyrics">
+            </span>
+        </section>
+    </body>
+</html>

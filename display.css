@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+body{
+    background-color: #400d72;
+}
+
+/* Specifications for the picture frame */
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture .logo{
+    min-height: 15vh;
+    width: 10%;
+    background-image: url("/Lyrix.gif"), linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+/* Drop down specifications */
+
+.dropbtn {
+    background-color: #d4d4d4;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #ff4da6;
+}
+
+#dropbttn-search {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content input{
+    all: unset;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* Search feature specifications */
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search form {
+    background-color: #ff4da6;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search form input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+.search form input::placeholder{
+    color: #ddd;
+}
+
+.search form button{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+/* This is where the main text will be displayed */
+
+.text-display{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-display label{
+    display: block;
+    color: #ddd;
+}
+
+.text-display input{
+    display: block;
+    min-height: 60vh;
+    min-width: 50vh;
+}
+
