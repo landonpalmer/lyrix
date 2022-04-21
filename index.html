@@ -7,6 +7,7 @@
         <title>Lyrix</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"> 
+        <link rel="stylesheet" href="">
     </head>
     <body>
         <section class="header">
@@ -38,25 +39,6 @@
               </div>
         </section>
 
-        <script>
-            function dropFunction(){
-                document.getElementById("dropdown").classList.toggle("show")
-            }
-            function filterFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("dropSearch");
-                filter = input.value.toUpperCase();
-                div = document.getElementById("dropdown");
-                a = div.getElementsByTagName("a");
-                for (i = 0; i < a.length; i++) {
-                    txtValue = a[i].textContent || a[i].innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    a[i].style.display = "";
-                    } else {
-                    a[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
+        <script src="/frontScript.js"></script>
     </body>
 </html>
