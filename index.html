@@ -26,22 +26,19 @@
             <form id="form" role="search">
                 <input type="search" id="query" name="q"
                 placeholder="What song is on your mind..."
-                aria-label="Search through site content">
+                aria-label="Search through site content" autocomplete="off">
                 <a href="/display.html" style="padding-right: 20px; color: #fff;"><i class="fa fa-search"></i></a>
+                <select name="languages" id="lang">
+                    <optgroup label="Languages">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="ko">Korean</option>
+                        <option value="ja">Japanese</option>
+                        <option value="sw">Swahili</option>
+                    </optgroup>
+                </select>
             </form>
-            <div class="dropdown">
-                <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
-                <div id="dropdown" class="dropdown-content">
-                  <input type="text" placeholder="Search.." id="dropSearch" onkeyup="filterFunction()">
-                  <a href="#">English</a>
-                  <a href="#">Spanish</a>
-                  <a href="#">Korean</a>
-                </div>
-            </div>
         </section>
-
-        
-
         <script src="/frontScript.js"></script>
         <script src="/services/lyricsService.js"></script>
     </body>
