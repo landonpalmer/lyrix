@@ -15,13 +15,17 @@ const getLanguage = async (text) => {
             'content-type': 'application/x-www-form-urlencoded',
             'Accept-Encoding': 'application/gzip',
             'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com',
-            'X-RapidAPI-Key': 'd616f8c901msh20e2bf991e7104dp11d7f8jsndbc55af464ae'
+            'X-RapidAPI-Key': 'd4db23b5e3msh43209409a0520f9p148ebdjsnc2636ceb0fbf'
         },
         body: encodedParams
     };
 
     fetch('https://google-translate1.p.rapidapi.com/language/translate/v2/detect', options)
-        .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => response.text())
+        .then((response) => {
+            var data = JSON.parse(response);
+            var lang = data.data.detections[0][0].language;
+            return lang;
+        })
         .catch(err => console.error(err));
 }
