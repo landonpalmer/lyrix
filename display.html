@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="display.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
         <script type="text/javascript" src="/frontScript.js"></script>
+        <script type="text/javascript" src="/services/lyricsService.js"></script>
+        <script type="text/javascript" src="/services/detectService.js"></script>
+        <script type="text/javascript" src="/services/translateService.js"></script>
     </head>
     <body>
         <section class="picture">
@@ -30,78 +33,9 @@
         <section class="text-display">
             <!-- Text boxes are non editable and used for display of lyrics-->
             <span style="display:inline-block;">
-                <label for="original">Original Lanague</label>
+                <label for="original">Original Language</label>
                 <div class="text-box">
                     <p id="o-text">
-                        버터처럼 부드럽게
-                        비밀스러운 악당처럼
-                        갑작스러운 문제처럼 터져
-                        네 마음속으로 몰래 침입할 거야
-                        선글라스를 낀 내 멋진 모습
-                        Yeah 다 우리 엄마 덕분이지
-                        여름처럼 핫해
-                        Yeah 그렇게 널 땀 흘리게 해
-                        잘 들어봐
-                        Oh 내가 거울을 들여다볼 때
-                        너의 심장을 두 개로 녹일 거야
-                        나는 슈퍼스타처럼 빛나니까
-                        이렇게 움직여봐
-                        내 심장에 가까이 오른쪽 왼쪽 한 걸음씩
-                        달만큼 높이 올라 나와 함께 즐겨봐
-                        내가 뜨거운 매력을 갖고 있는 거 알잖아
-                        말로는 뻔하니까 보여줄게
-                        내 심장에 가까이 오른쪽 왼쪽 한 걸음씩
-                        알겠다면, 시작해 보자
-                        버터처럼 부드럽게
-                        널 그 누구보다 강하게 끌어당겨
-                        굳이 알려줄 필요 없어
-                        네가 깊게 빠져들었다는 걸
-                        그 어떤 누구와도 달라
-                        너의 마음을 훔치는 강도처럼
-                        그래, 넌 내꺼야
-                        그렇게 널 푹 빠지게 해
-                        잘 들어봐
-                        Oh 내가 거울을 들여다볼 때
-                        너의 심장을 두 개로 녹일 거야
-                        나는 슈퍼스타처럼 빛나니까
-                        이렇게 움직여봐
-                        내 심장에 가까이 오른쪽 왼쪽 한 걸음씩
-                        달만큼 높이 올라 나와 함께 즐겨봐
-                        내가 뜨거운 매력을 갖고 있는 거 알잖아
-                        말로는 뻔하니까 보여줄게
-                        내 심장에 가까이 오른쪽 왼쪽 한 걸음씩
-                        알겠다면, 시작해 보자
-                        알겠다면, 시작해 보자
-                        알겠다면, 시작해 보자
-                        내 손목엔 호화로운 건 없지만
-                        난 그대로도 멋진 사람이야
-                        건강한 몸과 건강한 마음을 가졌어
-                        우린 적절한 분위기에 파티에 등장해
-                        버터처럼 부드럽게
-                        우리가 싫든 좋든
-                        멋진 친구들이 등장하면 우린 잠자코 있어
-                        베이스 소리가 깔리면 노는 사람들은 움직이기 시작하지
-                        우리 뒤엔 ARMY가 있어 우리가 말하잖아
-                        가자
-                        내 심장에 가까이 오른쪽 왼쪽 한 걸음씩
-                        달만큼 높이 올라 나와 함께 즐겨봐
-                        내가 뜨거운 매력을 갖고 있는 거 알잖아
-                        말로는 뻔하니까 보여줄게
-                        내 심장에 가까이 오른쪽 왼쪽 한 걸음씩
-                        알겠다면, 시작해 보자
-                        부드럽게 (버터처럼)
-                        멋진 선글라스 (멋지지)
-                        우린 절대 멈추지 않는 거 알잖아
-                        핫해 (여름처럼)
-                        하지 않을 거야 (실망은)
-                        넌 oh my god이라고 외치게 될 거야
-                        우리가 널 춤추게 하지 넌 외쳐 (yeah)
-                        우리가 널 뛰게 하지 넌 외쳐 (yeah)
-                        더 뜨겁게?
-                        더 달콤하게!
-                        더 시원하게?
-                        버터!
-                        알겠다면, 시작해 보자
                     </p>
                 </div>
             </span>
@@ -109,62 +43,32 @@
                 <label for="translated">Translated Lanague</label>
                 <div class="text-box">
                     <p id="t-text">
-                        Smooth like butter, like a criminal undercover
-                        Gon' pop like trouble breaking into your heart like that (ooh)
-                        Cool shade, stunner, yeah, I owe it all to my mother
-                        Hot like summer, yeah, I'm making you sweat like that (break it down)
-                        Ooh, when I look in the mirror
-                        I'll melt your heart into two
-                        I got that superstar glow, so
-                        Ooh (do the boogie, like)
-                        A side step, right-left, to my beat
-                        High like the moon, rock with me, baby
-                        Know that I got that heat
-                        Let me show you 'cause talk is cheap
-                        Side step, right-left, to my beat
-                        Get it, let it roll
-                        Smooth like butter, pull you in like no other
-                        Don't need no Usher to remind me you got it bad
-                        Ain't no other that can sweep you up like a robber
-                        Straight up, I (got ya)
-                        Making you fall like that (break it down)
-                        Ooh, when I look in the mirror
-                        I'll melt your heart into two
-                        I got that superstar glow, so
-                        Ooh (do the boogie, like)
-                        Side step, right-left, to my beat
-                        High like the moon, rock with me, baby
-                        Know that I got that heat
-                        Let me show you 'cause talk is cheap
-                        A side step, right-left, to my beat
-                        Get it, let it roll
-                        Get it, let it roll
-                        Get it, let it roll
-                        Ice on my wrist, I'm the nice guy
-                        Got the right body and the right mind
-                        Rolling up the party, got the right vibe
-                        Smooth like (butter), hate us (love us)
-                        Fresh boy, pull up and we lay low
-                        All the players get moving when the bass low
-                        Got ARMY right behind us when we say so
-                        Let's go
-                        Side step, right-left, to my beat (right-left, to my beat)
-                        High like the moon, rock with me, baby
-                        You know that I got that heat
-                        Let me show you 'cause talk is cheap (you know that talk is cheap)
-                        Side step, right-left, to my beat
-                        Get it, let it roll
-                        Smooth like (butter), cool shade (stunner)
-                        And you know we don't stop
-                        Hot like (summer), ain't no (bummer)
-                        You'll be like, "Oh my God"
-                        We gon' make you rock, and you say (yeah)
-                        We gon' make you bounce, and you say (yeah)
-                        Hotter, sweeter, cooler, butter!
-                        Get it, let it roll
                     </p>
                 </div>
             </span>
         </section>
+        <script>
+            window.onload = async function () {
+                var songNameInputFromStorage = localStorage.getItem("songInputValue") ?? "DEBUG: no song found";
+                console.log("song input from storage: " + songNameInputFromStorage);
+
+                const pleasedontbreak = await getSongLyrics2("Ghost");
+                console.log(pleasedontbreak.lyrics);
+                
+                document.getElementById("o-text").innerHTML = pleasedontbreak.lyrics;
+
+                const pleasedontbreaklang = await getLanguage(pleasedontbreak.lyrics);
+                console.log(pleasedontbreaklang);
+
+                var toTranslateIntoThingy = localStorage.getItem("desiredLangInputValue");
+                const pleasedontbreaktranslatedlyrics = await getTranslation(pleasedontbreak.lyrics, toTranslateIntoThingy, pleasedontbreaklang);
+                console.log(pleasedontbreaktranslatedlyrics);
+
+                document.getElementById("t-text").innerHTML = pleasedontbreaktranslatedlyrics;
+
+            }
+        </script>
+
+
     </body>
 </html>

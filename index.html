@@ -25,7 +25,7 @@
                 <input type="search" id="query" name="q"
                 placeholder="What song is on your mind..."
                 aria-label="Search through site content" autocomplete="off">
-                <a href="/display.html" style="padding-right: 20px; color: #fff;"><i class="fa fa-search"></i></a>
+                <a href="/display.html" style="padding-right: 20px; color: #fff;" onclick="storeSongInput()"><i class="fa fa-search"></i></a>
                 <select name="languages" id="lang">
                     <optgroup label="Languages">
                         <option value="en">English</option>
@@ -37,6 +37,18 @@
                 </select>
             </form>
         </section>
+        <script>
+            function storeSongInput() {
+                var songInput = document.getElementById('query').value;
+                localStorage.setItem("songInputValue", songInput);
+
+                var desiredLanguage = document.getElementById('lang').value;
+                localStorage.setItem("desiredLangInputValue", desiredLanguage);
+                console.log(desiredLanguage);
+
+                console.log("store clicked!");
+            }
+        </script>
         <script src="/frontScript.js"></script>
         <script src="/services/lyricsService.js"></script>
         <script src="/services/detectService.js"></script>
