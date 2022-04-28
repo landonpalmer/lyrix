@@ -53,7 +53,7 @@
                 var songNameInputFromStorage = localStorage.getItem("songInputValue") ?? "DEBUG: no song found";
                 console.log("song input from storage: " + songNameInputFromStorage);
 
-                const pleasedontbreak = await getSongLyrics2("Ghost");
+                const pleasedontbreak = await getSongLyrics2(songNameInputFromStorage);
                 console.log(pleasedontbreak.lyrics);
                 
                 document.getElementById("o-text").innerHTML = pleasedontbreak.lyrics;
