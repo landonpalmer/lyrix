@@ -66,7 +66,18 @@
                 console.log(pleasedontbreaktranslatedlyrics);
 
                 document.getElementById("t-text").innerHTML = pleasedontbreaktranslatedlyrics;
+            }
+            
+            // store the values again to be desiplayed on the next iteration
+            function storeSongInput() {
+                var songInput = document.getElementById('query').value;
+                localStorage.setItem("songInputValue", songInput);
 
+                var desiredLanguage = document.getElementById('lang').value;
+                localStorage.setItem("desiredLangInputValue", desiredLanguage);
+                console.log(desiredLanguage);
+
+                console.log("store clicked!");
             }
         </script>
 
