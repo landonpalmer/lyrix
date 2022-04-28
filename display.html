@@ -14,21 +14,22 @@
         <section class="picture">
             <div class="logo"></div>
         </section>
-        <section class="search-bar">
-            <div class="search">
-                <form id="form" role="search">
-                    <input type="search" id="query" name="q" placeholder="Ready for the next song?">
-                    <button>Search</button>
-                </form>
-                <div class="drop-down">
-                    <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
-                    <div id="dropdown" class="dropdown-content">
-                    <input type="text" placeholder="Search.." id="dropSearch" onkeyup="filterFunction()">
-                    <a href="#">English</a>
-                    <a href="#">Spanish</a>
-                    <a href="#">Korean</a>
-                </div>
-            </div>
+        <section class="search">
+            <form id="form" role="search">
+                <input type="search" id="query" name="q"
+                placeholder="Ready for next song? "
+                aria-label="Search through site content" autocomplete="off">
+                <a href="/display.html" style="padding-right: 20px; color: #fff;" onclick="storeSongInput()"><i class="fa fa-search"></i></a>
+                <select name="languages" id="lang">
+                    <optgroup label="Languages">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="ko">Korean</option>
+                        <option value="ja">Japanese</option>
+                        <option value="sw">Swahili</option>
+                    </optgroup>
+                </select>
+            </form>
         </section>
         <section class="text-display">
             <!-- Text boxes are non editable and used for display of lyrics-->

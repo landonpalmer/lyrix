@@ -144,7 +144,7 @@ nav .fa-home{
 
 .search form {
     background-color: #ff4da6;
-    width: 300px;
+    width: 500px;
     height: 44px;
     border-radius: 5px;
     display: flex;
@@ -170,6 +170,12 @@ nav .fa-home{
     cursor: pointer;
     width: 44px;
     height: 44px;
+}
+
+.search form select{
+    background-color: #ff4da6;
+    color: #ddd;
+    border: #ff4da6;
 }
 
 /* Failure Page*/
